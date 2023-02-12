@@ -1,0 +1,10 @@
+.navi {
+  border-bottom: 1px solid rgba(216, 191, 191, 0.488);
+}
+
+.cart-icon {
+  height: 50px;
+  width: 50px;
+  filter: invert(26%) sepia(25%) saturate(28%) hue-rotate(346deg)
+    brightness(90%) contrast(97%);
+}
