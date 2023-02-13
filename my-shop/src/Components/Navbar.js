@@ -1,6 +1,7 @@
 import React from "react";
 import "../Styles/Navi.css";
 import Cart from "./ShoppingCart/Cart";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -12,17 +13,17 @@ const Navbar = () => {
       <div className="menu flex justify-center items-center text-gray-300  bg-indigo-900 rounded">
         <ul>
           <li className="navilink py-2 px-8 hover:text-gray-100 active:bg-indigo-800 active:rounded cursor-pointer">
-            Home
+            <Link to="/">Home</Link>
           </li>
         </ul>
         <ul>
           <li className="navilink py-2 px-8 hover:text-gray-100 active:bg-indigo-800 active:rounded cursor-pointer">
-            Products
+            <Link to="/products">Products</Link>
           </li>
         </ul>
         <ul>
           <li className="navilink py-2 px-8 hover:text-gray-100 active:bg-indigo-800 active:rounded cursor-pointer">
-            Contact Us
+            <Link to="/contact">Contact us</Link>
           </li>
         </ul>
       </div>
