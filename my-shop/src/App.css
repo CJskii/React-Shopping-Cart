@@ -12,3 +12,7 @@
   background-image: url("../public/images/background.svg");
   min-height: 100vh;
 }
+
+.container {
+  min-height: 100%;
+}
