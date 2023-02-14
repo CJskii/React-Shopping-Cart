@@ -3,10 +3,13 @@
   height: 400px;
   border-radius: 25px;
   border: 1px solid rgba(255, 255, 255, 0.445);
+  max-height: fit-content;
 }
 
-.carousel-item {
-  max-height: fit-content;
+.carousel-bg {
+  border-radius: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.445);
+  background-color: rgb(26, 9, 54);
 }
 
 .container {
@@ -14,4 +17,16 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.explore-container {
+  background: rgba(60, 13, 98, 0.35);
+  box-shadow: 0 2px 12px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  border-radius: 25px;
+}
+
+.home {
+  min-height: 100%;
 }

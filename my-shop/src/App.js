@@ -7,7 +7,7 @@ import ContactUs from "./Components/ContactUs";
 
 function App() {
   return (
-    <div className="App h-full flex-col align-middle justify-center ">
+    <div className="App min-h-full flex flex-col items-center justify-center ">
       <Navbar />
       <Routes>
         <Route exact path="/" element={<Home />} />

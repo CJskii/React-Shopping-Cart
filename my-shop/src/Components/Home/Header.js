@@ -2,8 +2,15 @@ import React from "react";
 
 const Header = () => {
   return (
-    <div className="font-sans text-white text-center text-5xl justify-self-center self-center col-span-4 p-4">
-      <h1>The ultimate destination for crypto-mining hardware and gadgets </h1>
+    <div className="header">
+      <h1 className="text-3xl font-bold sm:text-4xl text-white">
+        The ultimate destination for crypto-mining hardware and gadgets{" "}
+      </h1>
+      <p className="mt-4 text-gray-600">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut qui hic
+        atque tenetur quis eius quos ea neque sunt, accusantium soluta minus
+        veniam tempora deserunt? Molestiae eius quidem quam repellat.
+      </p>
     </div>
   );
 };

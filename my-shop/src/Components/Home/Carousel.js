@@ -13,11 +13,14 @@ const Carousel = () => {
 
   return (
     <div className="carousel flex justify-center items-center">
-      <div id="item1" className="carousel-item m-8">
-        <img
-          src={`/images/carousel/${displayItem}.jpg`}
-          className="w-full carousel-item"
-        />
+      <div id="item1" className="carousel-item m-8 relative max-[320px]:hidden">
+        <div className="carousel-bg">
+          <img
+            src={`/images/carousel/${displayItem}.jpg`}
+            className="w-full carousel-item opacity-50"
+          />
+        </div>
+
         <div className="flex justify-center w-full py-2 gap-2">
           <button
             id="item1"
