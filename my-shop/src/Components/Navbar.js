@@ -1,64 +1,56 @@
-import React, { useState } from "react";
+import React from "react";
 import "../Styles/Navi.css";
-import Cart from "./ShoppingCart/Cart";
 import { Link } from "react-router-dom";
+import Cart from "./ShoppingCart/Cart";
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
-
   return (
-    <nav className="navi text-white w-full flex justify-between items-center p-4 fixed top-0 left-0 max-[320px]:p-2">
-      <div className="logo">
-        <h1 className="logo-name text-3xl max-[320px]:text-xl">CryptoCave</h1>
+    <div className="navbar bg-base-100">
+      <div className="navbar-start">
+        <Link className="btn btn-ghost normal-case text-xl" to="/">
+          CryptoCave
+        </Link>
       </div>
-
-      <button
-        className="hamburger md:hidden focus:outline-none"
-        onClick={toggleMenu}
-      >
-        <svg
-          className="w-6 h-6 fill-current"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <rect y="4" width="24" height="2" />
-          <rect y="11" width="24" height="2" />
-          <rect y="18" width="24" height="2" />
-        </svg>
-      </button>
-
-      <div
-        className={`menu md:flex md:items-center text-gray-300 bg-indigo-900 rounded ${
-          isOpen ? "flex" : "hidden"
-        }`}
-      >
-        <ul className="md:flex md:justify-between">
-          <li className="navilink py-2 px-8 hover:text-gray-100 hover:bg-indigo-700 hover:rounded active:rounded cursor-pointer">
-            <Link to="/" onClick={toggleMenu}>
-              Home
-            </Link>
+      <div className="navbar-center hidden lg:flex">
+        <ul className="menu menu-horizontal px-1">
+          <li>
+            <Link to="/">Home</Link>
           </li>
-          <li className="navilink py-2 px-8 hover:text-gray-100 hover:bg-indigo-700 hover:rounded active:rounded cursor-pointer">
-            <Link to="/products" onClick={toggleMenu}>
+          <li tabIndex={0}>
+            <Link to="/products">
               Products
+              <svg
+                className="fill-current"
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+              >
+                <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
+              </svg>
             </Link>
+
+            <ul className="menu bg-base-100 w-56 p-2 rounded-box">
+              <li>
+                <a>Item 1</a>
+              </li>
+              <li>
+                <a>Item 2</a>
+              </li>
+              <li>
+                <a>Item 3</a>
+              </li>
+            </ul>
           </li>
-          <li className="navilink py-2 px-8 hover:text-gray-100 hover:bg-indigo-700 hover:rounded active:rounded cursor-pointer">
-            <Link to="/contact" onClick={toggleMenu}>
-              Contact us
-            </Link>
+          <li>
+            <Link to="/contact">Contact us</Link>
           </li>
         </ul>
       </div>
-
-      <div className="icons py-2 px-8 mr-4 max-[375px]:p-2">
+      <div className="navbar-end">
         <Cart />
       </div>
-    </nav>
+    </div>
   );
 };
 
