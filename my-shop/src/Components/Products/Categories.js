@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import CategoriesCard from "./CategoriesCard";
 
 const Categories = () => {
-  const [items, setItems] = useState([]);
   const [category, setCategory] = useState([]);
 
   useEffect(() => {
