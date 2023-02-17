@@ -1,0 +1,16 @@
+@media (max-width: 640px) {
+  .card {
+    max-width: 100%;
+    width: 100vw;
+    margin-left: 15px;
+  }
+}
+
+@media (max-width: 320px) {
+  .card {
+    max-width: 100%;
+    width: 100vw;
+    padding: 0;
+    margin-left: 15px;
+  }
+}
