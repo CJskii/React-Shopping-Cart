@@ -6,6 +6,7 @@ import Shop from "./Components/Products/Shop";
 import ContactUs from "./Components/ContactUs";
 import Footer from "./Components/Footer";
 import CategoryItems from "./Components/Products/Category/CategoryItems";
+import ItemDetails from "./Components/Products/Category/ItemDetails";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route exact path="/products" element={<Shop />} />
         <Route exact path="/contact" element={<ContactUs />} />
         <Route path="/products/:name" element={<CategoryItems />} />
+        <Route path="/products/:name/:id" element={<ItemDetails />} />
       </Routes>
       <Footer />
     </div>
