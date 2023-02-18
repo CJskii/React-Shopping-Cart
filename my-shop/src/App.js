@@ -9,7 +9,7 @@ import CategoryItems from "./Components/Products/Category/CategoryItems";
 
 function App() {
   return (
-    <div className="App min-h-full flex flex-col items-center justify-center ">
+    <div className="App min-w-full min-h-full flex flex-col items-center justify-center ">
       <Navbar />
       <Routes>
         <Route exact path="/" element={<Home />} />

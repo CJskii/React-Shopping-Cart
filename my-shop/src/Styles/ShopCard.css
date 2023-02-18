@@ -14,3 +14,14 @@
     margin-left: 15px;
   }
 }
+
+.card {
+  max-height: 460px;
+  border: 1px solid white;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+  transition: ease-in-out 0.3s;
+}

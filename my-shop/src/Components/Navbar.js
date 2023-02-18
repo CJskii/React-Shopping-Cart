@@ -30,17 +30,17 @@ const Navbar = () => {
               </svg>
             </Link>
 
-            {/* <ul className="menu bg-base-100 w-56 p-2 rounded-box">
+            <ul className="menu bg-base-100 w-56 p-2 rounded-box">
               <li>
-                <a>Item 1</a>
+                <Link to="/products/ASIC Miners">ASIC Miners</Link>
               </li>
               <li>
-                <a>Item 2</a>
+                <Link to="/products/Graphic Cards">Graphic Cards</Link>
               </li>
               <li>
-                <a>Item 3</a>
+                <Link to="/products/Crypto Gadgets">Crypto Gadgets</Link>
               </li>
-            </ul> */}
+            </ul>
           </li>
           <li>
             <Link to="/contact">Contact us</Link>
