@@ -19,7 +19,7 @@ const Category = () => {
         : "";
 
     return (
-      <li key={index} className={liClassName}>
+      <li data-testid="category" key={index} className={liClassName}>
         <Link className="relative block group" to={`/products/${cat.name}`}>
           <img
             src={cat.source}

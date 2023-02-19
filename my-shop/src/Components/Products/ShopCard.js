@@ -6,7 +6,10 @@ const ShopCard = (props) => {
   const item = props.item;
   return (
     <Link to={`/products/${props.name}/${item.name}`}>
-      <div className="card w-96 bg-base-200 shadow-xl border-2 border-accent">
+      <div
+        data-testid="card"
+        className="card w-96 bg-base-200 shadow-xl border-2 border-accent"
+      >
         <figure className="h-full">
           <img
             src={item.source}

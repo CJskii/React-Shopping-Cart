@@ -3,7 +3,10 @@ import Category from "./Category/Category";
 
 const Shop = () => {
   return (
-    <div className="hero min-h-screen bg-base-200 flex justify-center items-start gap-4">
+    <div
+      data-testid="shop"
+      className="hero min-h-screen bg-base-200 flex justify-center items-start gap-4"
+    >
       <section>
         <div className="max-w-screen-xl px-4 py-8 mx-auto sm:px-6 sm:py-12 lg:px-8">
           <header className="text-center">

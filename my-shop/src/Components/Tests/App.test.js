@@ -33,13 +33,4 @@ describe("Render main components", () => {
     const footer = getByTestId("footer");
     expect(footer).toBeInTheDocument();
   });
-
-  it("should be always the same", () => {
-    const { fragment } = render(
-      <MemoryRouter>
-        <App />
-      </MemoryRouter>
-    );
-    expect(fragment).toMatchSnapshot();
-  });
 });

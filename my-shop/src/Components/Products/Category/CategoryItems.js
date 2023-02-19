@@ -20,7 +20,9 @@ const CategoryItems = () => {
   return (
     <div className="flex flex-col justify-center items-center flex-wrap min-w-screen bg-base-200">
       <div className="lg:py-24 p-4 category-text w-4/5">
-        <h2 className="text-3xl font-bold sm:text-4xl">{name}</h2>
+        <h2 data-testid="cat header" className="text-3xl font-bold sm:text-4xl">
+          {name}
+        </h2>
         <p className="mt-4 text-gray-600">{category.description}</p>
       </div>
       <div className="min-w-screen flex flex-wrap justify-center items-center gap-4 max-sm:gap-y-2 max-sm:justify-center pb-8">
