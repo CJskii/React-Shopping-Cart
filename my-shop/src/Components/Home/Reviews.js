@@ -39,7 +39,7 @@ const Reviews = () => {
                 experience. Their website was easy to navigate, checkout was
                 smooth, and my product arrived quickly. The customer service
                 team was friendly and helpful, and I would definitely recommend
-                CryptoCave to others.
+                CryptoCave to others looking for crypto mining equipment.
               </p>
 
               <div className="mt-8 flex justify-center gap-0.5 text-green-500">

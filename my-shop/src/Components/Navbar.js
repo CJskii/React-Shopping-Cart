@@ -5,7 +5,11 @@ import Cart from "./ShoppingCart/Cart";
 
 const Navbar = () => {
   return (
-    <div className="navbar bg-base-100" style={{ height: "8vh" }}>
+    <div
+      data-testid="navbar"
+      className="navbar bg-base-100"
+      style={{ height: "8vh" }}
+    >
       <div className="navbar-start">
         <Link className="btn btn-ghost normal-case text-xl" to="/">
           CryptoCave

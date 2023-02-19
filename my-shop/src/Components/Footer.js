@@ -3,6 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <footer
+      data-testId="footer"
       className="footer items-center p-4 bg-base-100 text-neutral-content flex flex-wrap justify-center md:justify-between"
       style={{ minHeight: "8vh" }}
     >
