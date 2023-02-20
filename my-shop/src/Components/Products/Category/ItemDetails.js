@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import fetchData from "../../../FakeDatabase/data";
 
-const ItemDetails = () => {
+const ItemDetails = (props) => {
   const { name, id } = useParams();
   const [itemData, setItemData] = useState({});
 
@@ -112,7 +112,7 @@ const ItemDetails = () => {
                 </div>
               </details>
 
-              <form className="mt-8">
+              <form className="mt-8" onSubmit={(e) => e.preventDefault()}>
                 <div className="flex mt-8">
                   <div>
                     <div className="flex items-center gap-1">
@@ -145,6 +145,9 @@ const ItemDetails = () => {
                   <button
                     type="submit"
                     className="block px-5 py-3 ml-3 text-xs font-medium text-white bg-green-600 rounded hover:bg-green-500"
+                    onClick={() => {
+                      props.addItem(itemData, 1);
+                    }}
                   >
                     Add to Cart
                   </button>

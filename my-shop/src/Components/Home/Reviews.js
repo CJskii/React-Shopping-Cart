@@ -30,7 +30,9 @@ const Reviews = () => {
             />
 
             <blockquote className="-mt-6 flex flex-col justify-between rounded-lg p-12 text-center shadow-xl">
-              <p className="text-lg font-bold text-gray-700">Mike Johnson</p>
+              <p className="text-lg font-bold text-base-content">
+                Mike Johnson
+              </p>
               <p className="mt-1 text-xs font-medium text-gray-500">
                 IT Consultant
               </p>
@@ -39,7 +41,7 @@ const Reviews = () => {
                 experience. Their website was easy to navigate, checkout was
                 smooth, and my product arrived quickly. The customer service
                 team was friendly and helpful, and I would definitely recommend
-                CryptoCave to others looking for crypto mining equipment.
+                CryptoCave to others looking for mining equipment.
               </p>
 
               <div className="mt-8 flex justify-center gap-0.5 text-green-500">
@@ -95,7 +97,7 @@ const Reviews = () => {
             />
 
             <blockquote className="-mt-6 flex flex-col justify-between rounded-lg p-12 text-center shadow-xl">
-              <p className="text-lg font-bold text-gray-700"> Sarah Lee</p>
+              <p className="text-lg font-bold text-base-content"> Sarah Lee</p>
               <p className="mt-1 text-xs font-medium text-gray-500">
                 Crypto Investor
               </p>
@@ -160,7 +162,7 @@ const Reviews = () => {
             />
 
             <blockquote className="-mt-6 flex flex-col justify-between rounded-lg p-12 text-center shadow-xl">
-              <p className="text-lg font-bold text-gray-700">David Chen</p>
+              <p className="text-lg font-bold text-base-content">David Chen</p>
               <p className="mt-1 text-xs font-medium text-gray-500">
                 Software Engineer
               </p>

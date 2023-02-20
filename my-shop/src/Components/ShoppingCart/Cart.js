@@ -38,7 +38,7 @@ const Cart = (props) => {
             <span className="text-info">Subtotal: ${props.basketTotal}</span>
             <div className="card-actions">
               <Link to="/basket">
-                <button className="btn btn-primary btn-block">View cart</button>
+                <button className="btn btn-primary btn-block">Checkout</button>
               </Link>
             </div>
           </div>

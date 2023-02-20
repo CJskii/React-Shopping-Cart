@@ -5,9 +5,10 @@ const CartDetails = (props) => {
     <section>
       <h1 className="text-center text-3xl p-4">Checkout</h1>
       <div
-        className="mx-auto grid max-w-screen-2xl grid-cols-1 md:grid-cols-2 bg-base-200"
+        className="min-w-screen grid min-w-screen-2xl grid-cols-1 md:grid-cols-2 bg-base-200"
         style={{
           minHeight: "84vh",
+          minWidth: "98vw",
         }}
       >
         <div className=" py-12 md:py-24">
@@ -41,12 +42,13 @@ const CartDetails = (props) => {
                           className="h-16 w-16 rounded object-cover"
                         />
 
-                        <div>
+                        <div className="flex flex-col justify-center items-center">
                           <h3 className="text-sm text-gray-400">{item.name}</h3>
+                          <span>{item.qty}</span>
                         </div>
 
                         <div className="flex flex-col justify-center items-center">
-                          <p>${item.price}</p>
+                          <p>${item.price * item.qty}</p>
                           <button onClick={() => props.removeItem(item)}>
                             Remove
                           </button>

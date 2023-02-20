@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import CategoryItems from "./CategoryItems";
 
 const Category = () => {
   const [categories, setCategories] = useState([]);

@@ -26,7 +26,7 @@ const ShopCard = (props) => {
           <button
             className="btn btn-primary"
             onClick={(item) => {
-              props.addItem(props.item);
+              props.addItem(props.item, 1);
             }}
           >
             Add to basket
