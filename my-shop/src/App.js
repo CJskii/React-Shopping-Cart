@@ -16,7 +16,6 @@ function App() {
   const [basketTotal, setBasketTotal] = useState(0);
 
   const addItem = (item) => {
-    console.log(items);
     const arr = [...items];
     arr.push(item);
     setItems(arr);

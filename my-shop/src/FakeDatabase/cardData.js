@@ -2,7 +2,7 @@ const cardData = [
   {
     name: "ASUS ROG RTX 4090 24GB",
     preOrder: true,
-    price: "2999.99",
+    price: "2999",
     source: "/images/GPUs/4090.png",
     description: "High performance GPU for mining crypto",
     longDescription:
@@ -12,7 +12,7 @@ const cardData = [
   },
   {
     name: "RTX 4080",
-    price: "2599.99",
+    price: "2599",
     source: "/images/GPUs/4080.png",
     description: "Top-tier GPU for mining cryptocurrency",
     longDescription:
@@ -22,7 +22,7 @@ const cardData = [
   },
   {
     name: "RTX 4070 Ti",
-    price: "1999.99",
+    price: "1999",
     source: "/images/GPUs/4070.png",
     description: "Powerful GPU for mining crypto",
     longDescription:
@@ -32,7 +32,7 @@ const cardData = [
   },
   {
     name: "RTX 3090 Ti",
-    price: "4499.99",
+    price: "4499",
     source: "/images/GPUs/3090Ti.png",
     description: "Cutting-edge GPU for mining",
     longDescription:
@@ -48,7 +48,7 @@ const cardData = [
       "The NVIDIA GeForce RTX 3090 is a high-end graphics card designed for gamers and professionals who demand the best performance. It is powered by the NVIDIA Ampere architecture and features 10496 CUDA cores, 328 Tensor Cores, 82 RT Cores, and 328 Texture Units. The card also has 24GB of GDDR6X memory and a memory bandwidth of 936 GB/s, which is ideal for mining cryptocurrency.",
     longDescription2:
       "In addition to its impressive performance, the RTX 3090 is equipped with advanced features such as real-time ray tracing and AI-enhanced graphics. It also supports HDMI 2.1 and DisplayPort 1.4a, allowing it to output high-resolution graphics and high frame rates. The card is ideal for mining cryptocurrencies such as Ethereum, which require high computational power and memory bandwidth.",
-    price: "$3,999.99",
+    price: "3999",
   },
   {
     name: "RTX 3080 Ti",
@@ -58,7 +58,7 @@ const cardData = [
       "The NVIDIA GeForce RTX 3080 Ti is a premium graphics card designed for gamers and professionals who require the best performance. It is based on the NVIDIA Ampere architecture and features 10240 CUDA cores, 320 Tensor Cores, 80 RT Cores, and 320 Texture Units. The card also has 12GB of GDDR6X memory and a memory bandwidth of 912 GB/s, making it ideal for mining cryptocurrency.",
     longDescription2:
       "The RTX 3080 Ti also features advanced features such as real-time ray tracing and AI-enhanced graphics, as well as HDMI 2.1 and DisplayPort 1.4a connectivity. The card is ideal for mining cryptocurrencies that require high computational power and memory bandwidth, such as Ethereum.",
-    price: "1,899.99",
+    price: "1899",
   },
   {
     name: "RTX 3080",
@@ -68,7 +68,7 @@ const cardData = [
       "The NVIDIA GeForce RTX 3080 is an advanced graphics card designed for gamers and professionals who need high performance. It is based on the NVIDIA Ampere architecture and features 8704 CUDA cores, 272 Tensor Cores, 68 RT Cores, and 272 Texture Units. The card also has 10GB of GDDR6X memory and a memory bandwidth of 760 GB/s, making it ideal for mining cryptocurrency.",
     longDescription2:
       "In addition to its impressive performance, the RTX 3080 also features advanced features such as real-time ray tracing and AI-enhanced graphics. It supports HDMI 2.1 and DisplayPort 1.4a connectivity, which allows it to output high-resolution graphics and high frame rates. The card is ideal for mining cryptocurrencies that require high computational power and memory bandwidth, such as Ethereum.",
-    price: "1,799.99",
+    price: "1799",
   },
 
   {
@@ -79,7 +79,7 @@ const cardData = [
       "The NVIDIA GeForce RTX 3070 is an advanced graphics card designed for gamers and professionals who need high performance. It is based on the NVIDIA Ampere architecture and features 8704 CUDA cores, 272 Tensor Cores, 68 RT Cores, and 272 Texture Units. The card also has 10GB of GDDR6X memory and a memory bandwidth of 760 GB/s, making it ideal for mining cryptocurrency.",
     longDescription2:
       "In addition to its impressive performance, the RTX 3070 also features advanced features such as real-time ray tracing and AI-enhanced graphics. It supports HDMI 2.1 and DisplayPort 1.4a connectivity, which allows it to output high-resolution graphics and high frame rates. The card is ideal for mining cryptocurrencies that require high computational power and memory bandwidth, such as Ethereum.",
-    price: "1,199.99",
+    price: "1199",
   },
   {
     name: "RTX 3070 Ti",
@@ -89,7 +89,7 @@ const cardData = [
       "The NVIDIA GeForce RTX 3070Ti is an advanced graphics card designed for gamers and professionals who need high performance. It is based on the NVIDIA Ampere architecture and features 8704 CUDA cores, 272 Tensor Cores, 68 RT Cores, and 272 Texture Units. The card also has 10GB of GDDR6X memory and a memory bandwidth of 760 GB/s, making it ideal for mining cryptocurrency.",
     longDescription2:
       "In addition to its impressive performance, the RTX 3070Ti also features advanced features such as real-time ray tracing and AI-enhanced graphics. It supports HDMI 2.1 and DisplayPort 1.4a connectivity, which allows it to output high-resolution graphics and high frame rates. The card is ideal for mining cryptocurrencies that require high computational power and memory bandwidth, such as Ethereum.",
-    price: "1,499.99",
+    price: "1499",
   },
   {
     name: "RTX 3060 Ti",
@@ -99,7 +99,7 @@ const cardData = [
       "The NVIDIA GeForce RTX 3060Ti is an advanced graphics card designed for gamers and professionals who need high performance. It is based on the NVIDIA Ampere architecture and features 8704 CUDA cores, 272 Tensor Cores, 68 RT Cores, and 272 Texture Units. The card also has 10GB of GDDR6X memory and a memory bandwidth of 760 GB/s, making it ideal for mining cryptocurrency.",
     longDescription2:
       "In addition to its impressive performance, the RTX 3060Ti also features advanced features such as real-time ray tracing and AI-enhanced graphics. It supports HDMI 2.1 and DisplayPort 1.4a connectivity, which allows it to output high-resolution graphics and high frame rates. The card is ideal for mining cryptocurrencies that require high computational power and memory bandwidth, such as Ethereum.",
-    price: "1,099.99",
+    price: "1099",
   },
   {
     name: "RTX 3060",
@@ -109,7 +109,7 @@ const cardData = [
       "The NVIDIA GeForce RTX 3060 is an advanced graphics card designed for gamers and professionals who need high performance. It is based on the NVIDIA Ampere architecture and features 8704 CUDA cores, 272 Tensor Cores, 68 RT Cores, and 272 Texture Units. The card also has 10GB of GDDR6X memory and a memory bandwidth of 760 GB/s, making it ideal for mining cryptocurrency.",
     longDescription2:
       "In addition to its impressive performance, the RTX 3060 also features advanced features such as real-time ray tracing and AI-enhanced graphics. It supports HDMI 2.1 and DisplayPort 1.4a connectivity, which allows it to output high-resolution graphics and high frame rates. The card is ideal for mining cryptocurrencies that require high computational power and memory bandwidth, such as Ethereum.",
-    price: "999.99",
+    price: "999",
   },
   {
     name: "RTX 3050",
@@ -119,7 +119,7 @@ const cardData = [
       "The NVIDIA GeForce RTX 3050 is an advanced graphics card designed for gamers and professionals who need high performance. It is based on the NVIDIA Ampere architecture and features 8704 CUDA cores, 272 Tensor Cores, 68 RT Cores, and 272 Texture Units. The card also has 10GB of GDDR6X memory and a memory bandwidth of 760 GB/s, making it ideal for mining cryptocurrency.",
     longDescription2:
       "In addition to its impressive performance, the RTX 3050 also features advanced features such as real-time ray tracing and AI-enhanced graphics. It supports HDMI 2.1 and DisplayPort 1.4a connectivity, which allows it to output high-resolution graphics and high frame rates. The card is ideal for mining cryptocurrencies that require high computational power and memory bandwidth, such as Ethereum.",
-    price: "899.99",
+    price: "899",
   },
 ];
 

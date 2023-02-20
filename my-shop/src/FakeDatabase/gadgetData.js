@@ -97,7 +97,7 @@ const gadgetData = [
     source: "/images/Gadgets/Elipal.jpg",
     description:
       "Air-gapped hardware wallet with mobile support and an intuitive user interface",
-    price: "169.99",
+    price: "169",
     longDescription:
       "The Ellipal Titan is a cold storage hardware wallet that provides an air-gapped environment for your cryptocurrencies. It features a 4-inch touch screen and a mobile app for easy and intuitive management of your digital assets. The device is completely wireless and supports over 30 different cryptocurrencies. The Ellipal Titan is also highly secure, with a tamper-evident design and a secure chip to protect your private keys. It's an ideal solution for those who value both security and convenience.",
   },
