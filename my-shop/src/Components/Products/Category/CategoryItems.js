@@ -4,7 +4,7 @@ import fetchData from "../../../FakeDatabase/data";
 import ShopCard from "../ShopCard";
 import fetchCategoryData from "../../../FakeDatabase/categoryData";
 
-const CategoryItems = () => {
+const CategoryItems = (props) => {
   const { name } = useParams();
 
   const [itemData, setItemData] = useState([]);
@@ -27,7 +27,15 @@ const CategoryItems = () => {
       </div>
       <div className="min-w-screen flex flex-wrap justify-center items-center gap-4 max-sm:gap-y-2 max-sm:justify-center pb-8">
         {itemData.map((item, index) => {
-          return <ShopCard key={index} item={item} name={name} />;
+          return (
+            <ShopCard
+              key={index}
+              item={item}
+              name={name}
+              addItem={props.addItem}
+              removeItem={props.removeItem}
+            />
+          );
         })}
       </div>
     </div>

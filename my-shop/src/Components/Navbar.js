@@ -3,7 +3,7 @@ import "../Styles/Navi.css";
 import { Link } from "react-router-dom";
 import Cart from "./ShoppingCart/Cart";
 
-const Navbar = () => {
+const Navbar = (props) => {
   return (
     <div
       data-testid="navbar"
@@ -52,7 +52,7 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <Cart />
+        <Cart itemCount={props.itemCount} basketTotal={props.basketTotal} />
       </div>
     </div>
   );
