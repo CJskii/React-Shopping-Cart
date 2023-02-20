@@ -29,6 +29,7 @@ function App() {
     arr.splice(index, 1);
     setItems(arr);
     setItemCount(itemCount - 1);
+    setBasketTotal(Number(basketTotal) - Number(item.price));
   };
 
   return (
@@ -48,7 +49,13 @@ function App() {
         <Route path="/products/:name/:id" element={<ItemDetails />} />
         <Route
           path="/basket"
-          element={<CartDetails items={items} removeItem={removeItem} />}
+          element={
+            <CartDetails
+              items={items}
+              removeItem={removeItem}
+              basketTotal={basketTotal}
+            />
+          }
         />
       </Routes>
       <Footer />
