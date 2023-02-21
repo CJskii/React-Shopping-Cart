@@ -22,25 +22,29 @@ function App() {
   };
 
   const addItem = (item, qty) => {
+    const arr = [...items];
     if (isInTheBasket(item)) {
-      return adjustQuantity(item, qty);
+      const index = arr.indexOf(item);
+      arr[index].qty = Number(arr[index].qty) + Number(qty);
+      setItems(arr);
+      setBasketTotal(Number(basketTotal) + item.price * qty);
+      setItemCount(itemCount + qty);
     } else {
-      const arr = [...items];
       item.qty = qty;
       arr.push(item);
       setItems(arr);
-      setItemCount(itemCount + 1);
-      setBasketTotal(Number(basketTotal) + Number(item.price));
+      setItemCount(itemCount + qty);
+      setBasketTotal(Number(basketTotal) + Number(item.price) * qty);
     }
   };
 
-  const removeItem = (item) => {
+  const removeItem = (item, qty) => {
     const arr = [...items];
     const index = arr.indexOf(item);
     arr.splice(index, 1);
     setItems(arr);
-    setItemCount(itemCount - 1);
-    setBasketTotal(Number(basketTotal) - Number(item.price));
+    setItemCount(itemCount - qty);
+    setBasketTotal(Number(basketTotal) - Number(item.price) * Number(item.qty));
   };
 
   const isInTheBasket = (item) => {
@@ -49,12 +53,22 @@ function App() {
     else return false;
   };
 
-  const adjustQuantity = (item, qty) => {
-    const arr = [...items];
-    const index = arr.indexOf(item);
-    arr[index].qty = Number(arr[index].qty) + Number(qty);
-    setItems(arr);
-    setBasketTotal(Number(basketTotal) + item.price * qty);
+  const changeItemQuantity = (item, operator) => {
+    if (operator === "add") {
+      let arr = [...items];
+      const index = arr.indexOf(item);
+      arr[index].qty = Number(arr[index].qty + 1);
+      setItems(arr);
+      setBasketTotal(Number(basketTotal) + Number(arr[index].price));
+      setItemCount(itemCount + 1);
+    } else {
+      let arr = [...items];
+      const index = arr.indexOf(item);
+      arr[index].qty = Number(arr[index].qty - 1);
+      setItems(arr);
+      setBasketTotal(Number(basketTotal) - Number(arr[index].price));
+      setItemCount(itemCount - 1);
+    }
   };
 
   return (
@@ -87,6 +101,7 @@ function App() {
               items={items}
               removeItem={removeItem}
               basketTotal={basketTotal}
+              changeItemQuantity={changeItemQuantity}
             />
           }
         />

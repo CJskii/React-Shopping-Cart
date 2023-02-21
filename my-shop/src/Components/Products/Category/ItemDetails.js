@@ -5,6 +5,7 @@ import fetchData from "../../../FakeDatabase/data";
 const ItemDetails = (props) => {
   const { name, id } = useParams();
   const [itemData, setItemData] = useState({});
+  const [inputValue, setInputValue] = useState(1);
 
   useEffect(() => {
     const data = fetchData(name);
@@ -13,6 +14,7 @@ const ItemDetails = (props) => {
     });
     setItemData(response[0]);
   }, [name, id]);
+
   return (
     <div
       data-testid="itemdetails"
@@ -122,6 +124,11 @@ const ItemDetails = (props) => {
                       <button
                         type="button"
                         className="w-10 h-10 leading-10 text-gray-600 transition hover:opacity-75"
+                        onClick={() => {
+                          if (inputValue > 1) {
+                            setInputValue(inputValue - 1);
+                          }
+                        }}
                       >
                         -
                       </button>
@@ -129,13 +136,15 @@ const ItemDetails = (props) => {
                       <input
                         type="number"
                         id="Quantity"
-                        value="1"
+                        value={inputValue !== 0 ? inputValue : 0}
+                        onChange={(e) => setInputValue(e.target.value)}
                         className="h-10 w-16 rounded border-gray-200 text-center [-moz-appearance:_textfield] sm:text-sm [&::-webkit-outer-spin-button]:m-0 [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:m-0 [&::-webkit-inner-spin-button]:appearance-none"
                       />
 
                       <button
                         type="button"
                         className="w-10 h-10 leading-10 text-gray-600 transition hover:opacity-75"
+                        onClick={() => setInputValue(inputValue + 1)}
                       >
                         +
                       </button>
@@ -146,7 +155,7 @@ const ItemDetails = (props) => {
                     type="submit"
                     className="block px-5 py-3 ml-3 text-xs font-medium text-white bg-green-600 rounded hover:bg-green-500"
                     onClick={() => {
-                      props.addItem(itemData, 1);
+                      props.addItem(itemData, inputValue);
                     }}
                   >
                     Add to Cart

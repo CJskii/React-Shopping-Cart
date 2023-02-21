@@ -1,9 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const CartDetails = (props) => {
   return (
     <section>
-      <h1 className="text-center text-3xl p-4">Checkout</h1>
+      <h1 className="text-center text-3xl p-4 bg-base-200">Checkout</h1>
       <div
         className="min-w-screen grid min-w-screen-2xl grid-cols-1 md:grid-cols-2 bg-base-200"
         style={{
@@ -21,10 +22,17 @@ const CartDetails = (props) => {
 
             <div>
               <p className="text-2xl font-medium tracking-tight text-gray-400">
-                ${props.basketTotal}
+                {props.basketTotal > 0
+                  ? `$${props.basketTotal}`
+                  : "Your basket is empty"}
               </p>
-
-              <p className="mt-1 text-sm text-gray-500">For the purchase of</p>
+              {props.basketTotal > 0 ? (
+                <p className="mt-1 text-sm text-gray-500">
+                  For the purchase of
+                </p>
+              ) : (
+                <Link to="/products">Explore our products</Link>
+              )}
             </div>
 
             <div>
@@ -44,12 +52,41 @@ const CartDetails = (props) => {
 
                         <div className="flex flex-col justify-center items-center">
                           <h3 className="text-sm text-gray-400">{item.name}</h3>
-                          <span>{item.qty}</span>
+                          <div className="flex justify-center items-center">
+                            <button
+                              id="substract"
+                              type="button"
+                              className="w-10 h-10 leading-10 text-gray-600 transition hover:opacity-75"
+                              onClick={(e) => {
+                                if (item.qty > 1) {
+                                  props.changeItemQuantity(item, e.target.id);
+                                }
+                              }}
+                            >
+                              -
+                            </button>
+                            <span className="w-1/6 text-center px-6">
+                              {item.qty}
+                            </span>
+
+                            <button
+                              id="add"
+                              type="button"
+                              className="w-10 h-10 leading-10 text-gray-600 transition hover:opacity-75"
+                              onClick={(e) =>
+                                props.changeItemQuantity(item, e.target.id)
+                              }
+                            >
+                              +
+                            </button>
+                          </div>
                         </div>
 
                         <div className="flex flex-col justify-center items-center">
                           <p>${item.price * item.qty}</p>
-                          <button onClick={() => props.removeItem(item)}>
+                          <button
+                            onClick={() => props.removeItem(item, item.qty)}
+                          >
                             Remove
                           </button>
                         </div>
@@ -64,6 +101,7 @@ const CartDetails = (props) => {
 
         <div className=" py-12 md:py-24">
           <div className="mx-auto max-w-lg px-4 lg:px-8">
+            <h1 className="text-center text-2xl p-4">Payments coming soon</h1>
             <form className="grid grid-cols-6 gap-4">
               <div className="col-span-3">
                 <label
