@@ -25,7 +25,10 @@ const CategoryItems = (props) => {
         </h2>
         <p className="mt-4 text-gray-600">{category.description}</p>
       </div>
-      <div className="min-w-screen flex flex-wrap justify-center items-center gap-4 max-sm:gap-y-2 max-sm:justify-center pb-8">
+      <div
+        className="min-w-screen flex flex-wrap justify-center items-center gap-4 max-sm:gap-y-2 max-sm:justify-center pb-8"
+        style={{ maxWidth: "100vw" }}
+      >
         {itemData.map((item, index) => {
           return (
             <ShopCard

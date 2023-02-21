@@ -7,7 +7,7 @@ const ShopCard = (props) => {
   return (
     <div
       data-testid="card"
-      className="card w-96 bg-base-200 shadow-xl border-2 border-accent"
+      className="card w-96 bg-base-200 shadow-xl border-2 border-accent max-sm:mr-2"
     >
       <figure className="h-full">
         <img

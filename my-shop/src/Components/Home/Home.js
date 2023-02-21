@@ -1,5 +1,6 @@
 import React from "react";
 import Reviews from "./Reviews";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -25,7 +26,9 @@ const Home = () => {
             we have the equipment you need to take your mining game to the next
             level.
           </p>
-          <button className="btn btn-primary">Get Started</button>
+          <Link to="/products">
+            <button className="btn btn-primary">Get Started</button>
+          </Link>
         </div>
       </div>
       <Reviews />

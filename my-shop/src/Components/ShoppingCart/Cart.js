@@ -31,7 +31,7 @@ const Cart = (props) => {
         </label>
         <div
           tabIndex={0}
-          className="mt-3 card card-compact dropdown-content w-52 bg-base-100 shadow"
+          className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
         >
           <div className="card-body">
             <span className="font-bold text-lg">{props.itemCount} Items</span>

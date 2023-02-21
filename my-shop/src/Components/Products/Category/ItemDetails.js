@@ -118,7 +118,7 @@ const ItemDetails = (props) => {
                 <div className="flex mt-8">
                   <div>
                     <div className="flex items-center gap-1">
-                      <label for="Quantity" className="sr-only">
+                      <label htmlFor="Quantity" className="sr-only">
                         Quantity
                       </label>
                       <button

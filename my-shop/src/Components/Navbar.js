@@ -11,7 +11,7 @@ const Navbar = (props) => {
       className="navbar bg-base-100"
       style={{ height: "8vh" }}
     >
-      <div className="navbar-start">
+      <div className="navbar-start lg:flex">
         <Link className="btn btn-ghost normal-case text-xl" to="/">
           CryptoCave
         </Link>

@@ -41,7 +41,7 @@ const Reviews = () => {
                 experience. Their website was easy to navigate, checkout was
                 smooth, and my product arrived quickly. The customer service
                 team was friendly and helpful, and I would definitely recommend
-                CryptoCave to others looking for mining equipment.
+                CryptoCave to others looking for crypto mining equipment.
               </p>
 
               <div className="mt-8 flex justify-center gap-0.5 text-green-500">
@@ -104,9 +104,9 @@ const Reviews = () => {
               <p className="mt-4 text-sm text-gray-500">
                 I've been a customer of CryptoCave for a few months and have had
                 nothing but positive experiences. I recently purchased an ASIC
-                miner from them, and it's been working great. Their customer
-                service team is quick to respond and very helpful. I highly
-                recommend CryptoCave for all your mining needs.
+                miner and GPU from them, and it's been working great. Their
+                customer service team is quick to respond and very helpful. I
+                highly recommend CryptoCave for all your crypto mining needs.
               </p>
 
               <div className="mt-8 flex justify-center gap-0.5 text-green-500">
